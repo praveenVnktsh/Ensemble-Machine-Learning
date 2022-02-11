@@ -73,9 +73,11 @@ Final Estimator:
 ### AdaBoost
 
 Individual Estimators
+
 ![](images/q5_individualEstimators_class.png)
 
 Final estimator:
+
 ![](images/q5_finalEstimator_class.png)
 
 
@@ -85,6 +87,7 @@ Final estimator:
 
 
 Individual Estimators
+
 ![](images/q7_1_classification.png)
 
 Final Estimator
