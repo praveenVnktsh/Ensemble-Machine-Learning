@@ -16,9 +16,9 @@ N = 30
 P = 5
 X = pd.DataFrame(np.random.randn(N, P))
 y = pd.Series(np.random.randint(P, size = N), dtype="category")
-Classifier_RF = RandomForestClassifier(3, criterion = 'information_gain')
-Classifier_RF.fit(X, y)
-y_hat = Classifier_RF.predict(X)
+classifier_RF = RandomForestClassifier(3, criterion = 'information_gain')
+classifier_RF.fit(X, y)
+y_hat = classifier_RF.predict(X)
 ```
 
 
@@ -34,9 +34,9 @@ X = pd.DataFrame(np.abs(np.random.randn(N, P)))
 y = pd.Series(np.random.randint(NUM_OP_CLASSES, size = N), dtype="category")
 criteria = 'information_gain'       
 tree = DecisionTreeClassifier
-Classifier_AB = AdaBoostClassifier(base_estimator=tree, n_estimators=n_estimators )
-Classifier_AB.fit(X, y)
-y_hat = Classifier_AB.predict(X)
+classifier_AB = AdaBoostClassifier(base_estimator=tree, n_estimators=n_estimators )
+classifier_AB.fit(X, y)
+y_hat = classifier_AB.predict(X)
 ```
 
 
@@ -50,9 +50,9 @@ n_estimators = 3
 X = pd.DataFrame(np.abs(np.random.randn(N, P)))
 y = pd.Series(np.random.randint(NUM_OP_CLASSES, size = N), dtype="category")
 
-Classifier_B = BaggingClassifier(base_estimator=DecisionTreeClassifier, n_estimators=n_estimators )
-Classifier_B.fit(X, y)
-y_hat = Classifier_B.predict(X)
+classifier_B = BaggingClassifier(base_estimator=DecisionTreeClassifier, n_estimators=n_estimators )
+classifier_B.fit(X, y)
+y_hat = classifier_B.predict(X)
 ```
 
 
